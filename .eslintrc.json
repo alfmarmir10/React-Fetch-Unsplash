@@ -1,0 +1,27 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/jsx-runtime",
+        "airbnb"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "quotes":"warn",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        // "indent": ["warn", 4]
+        "react/jsx-indent": [1, 2]
+    }
+}

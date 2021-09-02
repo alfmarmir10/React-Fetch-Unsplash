@@ -1,0 +1,72 @@
+.header{
+  height: 10vh;
+}
+
+.header-icon{
+  width: 8vw;
+  height: 8vw;
+}
+
+.header-title{
+  margin-left: 2vw;
+  font-size: 1.5rem;
+
+}
+
+.card{
+  width: 80vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px white;
+  margin: 2vw;
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery-grid-container{
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 30vh;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+.card a{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 700px) {
+  .card{
+    width: 40vw;
+  }
+
+  .gallery-grid-container{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 30vh;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header{
+    height: 15vh;
+    background-color: white;
+  }
+
+  .header-icon{
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .header-title{
+    font-size: 3rem;
+  }
+
+  .card{
+    width: 25vw;
+    margin-right: 2vw;
+  }
+}
